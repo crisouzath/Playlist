@@ -1,0 +1,411 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500&display=swap');
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+::-webkit-scrollbar {
+width: 0px;
+}
+
+.main-home {
+    width: 100%;
+    height: 100%;
+}
+
+.barra-lateral {
+    position: fixed;
+    background-color: black;
+    width: 15%;
+    height: 100%;
+    padding: 10px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+ul {
+    list-style-type: none;
+    width: 90%;
+}
+
+li {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.barra-lateral ul a{
+    cursor:pointer;
+}
+
+.barra-lateral ul a:nth-child(4) li{
+    background: linear-gradient(256.25deg, #EEB462 27.01%, #DC8665 103.16%);
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+    filter: invert(100%);
+    margin-right: 10px;
+}
+
+.perfil {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 5px;
+    background: linear-gradient(256.25deg, #EEB462 27.01%, #DC8665 103.16%);
+    border-radius: 5px;
+    align-items: center;
+}
+
+.perfil-foto {
+    height: 30px;
+    width: 30px;
+    background-image: url(img/user-solid.svg);
+    background-size: cover;
+    filter: invert(100%);
+}
+
+.arrow-up {
+    height: 30px;
+    width: 30px;
+    background-image: url(img/chevron-up-solid.svg);
+    background-size: cover;
+    filter: invert(100%);
+    cursor:pointer;
+}
+
+.conteudo {
+    margin-left: 15%;
+    padding: 35px;
+}
+
+.box-apresentacao{
+    width: 100%;
+    background: linear-gradient(256.25deg, #EEB462 27.01%, #DC8665 103.16%);
+    border-radius: 15px;
+    color:white;
+    box-shadow: 0px 0px 15px 4px rgba(205, 118, 114, 0.3);
+    display:grid;
+    grid-template-areas:
+    "a a b"
+    "c c b";
+    margin-bottom: 70px;
+}
+
+.box-apresentacao .mascote{
+    grid-area: b;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+    width: 450px;
+    height: 400px;
+}
+
+.box-apresentacao h1{
+    grid-area: a;
+    font-size: 70px;
+    margin-top: 70px;
+    margin-left: 80px;
+    font-weight: 400;
+}
+
+.box-apresentacao p{
+    grid-area: c;
+    font-size: 30px;
+    margin-left: 80px;
+    font-weight: lighter;
+    margin-top: -70px;
+}
+
+.main-home h2{
+    font-size: 35px;
+    font-weight: normal;
+}
+
+.carrosel{
+    display: flex;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        flex-direction: row;     
+         align-items: center; 
+        width: 100%; 
+        overflow-y:hidden;
+        margin-bottom: 40px;
+}
+
+.box-album{
+        margin: 20px;
+        height: 240px;
+        border-radius: 15px;
+        padding: 15px;
+        cursor:pointer;
+    }
+
+    .box-album h3, .box-musica h3{
+        font-weight:600;
+    }
+
+    .box-album p, .box-musica p{
+        font-weight:normal;
+    }
+
+    .box-album:nth-child(1){
+        background: linear-gradient(256.25deg, #EEB462 27.01%, #DC8665 103.16%);
+        color:white;
+        box-shadow: 0px 0px 15px 4px rgba(205, 118, 114, 0.3);
+    }
+
+.box-album .img-album{
+
+    height: 140px;
+    width: 140px;
+    border-radius: 10px;
+    margin:0 auto;
+    margin-bottom: 20px;
+}
+
+.box-album:nth-child(1) .img-album{
+    background-image: url("img/gato1.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.box-album:nth-child(2) .img-album{
+    background-image: url("img/gato2.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.box-album:nth-child(3) .img-album{
+    background-image: url("img/gato3.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.box-album:nth-child(4) .img-album{
+    background-image: url("img/gato4.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.box-album:nth-child(5) .img-album{
+    background-image: url("img/gato5.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.box-musica{
+    width: 80%;
+    padding: 5px;
+    border-radius: 15px;
+    margin: 0 auto;
+    cursor: pointer;
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: 80px  530px 40px 40px 40px;
+    column-gap: 25px ;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+.img-musica{
+    width: 80px;
+    margin: 5px;
+    height:80px;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+}
+
+.box-musica label{
+    cursor: pointer;
+}
+
+.corazon{
+    width: 40px;
+    height: 40px;
+    background-image: url("img/heart-regular.svg");
+}
+
+.plus{
+    width: 40px;
+    height: 40px;
+    background-image: url("img/plus.png");
+    background-size: cover;
+}
+
+.plus:hover, .corazon:hover{
+    transform: scale(1.1);
+}
+
+.marcado{
+    background: linear-gradient(256.25deg, #EEB462 27.01%, #DC8665 103.16%);
+        color:white;
+        box-shadow: 0px 0px 15px 4px rgba(205, 118, 114, 0.3);
+        color: white;
+}
+
+.marcado .corazon, .marcado .plus{
+    filter: invert(100%);
+}
+
+.barra-lateral li:hover{
+    background-color: rgba(255, 255, 255, 0.151);
+    transform: scale(1.1);
+}
+
+
+
+.box-album:hover, .box-musica:hover{
+    background-color: rgba(0, 0, 0, 0.103);
+} 
+
+.main-musica{
+    width: 100%;
+    height: 100%;
+    display:none;
+}
+
+.box-img-musica{
+    height:100vh;
+    width: 50%;
+    background-color: black;
+    background-size: cover;
+    background-position: center;
+}
+
+.informacoes-musica{
+    background-color:black;
+    width:50%;
+    height: 100%;
+    padding: 20px;
+    color: white;
+   
+}
+
+.btn-album{
+    background-image: url("img/playlist.png");
+    background-size: cover;
+    filter: invert(100%);
+     width: 35px;
+    height: 35px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.informacoes-musica h2{
+    font-size: 36px;
+}
+
+.informacoes-musica p{
+    font-size: 20px;
+}
+
+.letra-song{
+    margin-top: 40px;
+    max-width: 100%;
+    max-height: 65%;
+    overflow-y: scroll;
+    font-weight: 200;
+    font-size: 23px;
+}
+
+.music-player{
+    position: fixed;
+    width: 100%;
+    height: 10%;
+    background: linear-gradient(256.25deg, #EEB462 27.01%, #DC8665 103.16%);
+    bottom: 0;
+    left: 0;
+    border-radius: 15px 15px 0px 0px;
+    padding: 20px;
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: 45px 45px 45px 1100px 45px;
+    column-gap: 10px;
+    align-items: center;
+
+}
+
+.btn-previous{
+    background-image: url("img/back.png");
+    width: 45px;
+    height: 45px;
+    background-size: cover;
+}
+
+.btn-play{
+    background-image: url("img/circle-play-solid.svg");
+    width: 45px;
+    height: 45px;
+    
+}
+
+.btn-pause{
+    background-image: url("img/circle-pause-solid.svg");
+    width: 45px;
+    height: 45px;
+    display:none;
+}
+
+.btn-next{
+    background-image: url("img/back.png");
+    width: 45px;
+    height: 45px;
+    background-size: cover;
+    transform: matrix(-1, 0, 0, 1, 0, 0);    
+    }
+
+    .barra-progress{
+        width: 100%;
+        height: 10px;
+        border: 1px white solid;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+    }
+
+    progress{
+        height: 10px;
+        width:0;
+        
+    }
+
+    .control{
+        width: 20px;
+        height: 20px;
+        background-color: white;
+        border-radius: 50%;
+        margin-left: -2px;
+    }
+
+.btn-volume{
+    background-image: url("img/volume.png");
+    width: 40px;
+    height: 40px;
+    background-size: cover;
+}
+
+.btn-muted{
+    background-image: url("img/mute.png");
+    width: 40px;
+    height: 40px;
+    background-size: cover;
+    display: none;
+}
+
+.btn-pause, .btn-play, .btn-next, .btn-previous, .btn-volume, .btn-muted{
+    filter: invert(100%);
+    cursor: pointer;
+}
