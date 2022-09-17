@@ -1,5 +1,5 @@
 # Playlist🎵
-->Atividade proposta no Instituto PROA onde deveria ser criado um álbum com músicas que refletissem aspectos da minha vida.
+->Atividade proposta pelo Instituto PROA onde deveria ser criado um álbum com músicas que refletissem aspectos da minha vida.
 
 Inicialmente o projeto foi prototipado no Figma e finalizado em HTML, CSS e JavaScript. O maior obstáculo durante o desenvolvimento foi a escolha de músicas que refletissem aspectos da minha vida, porém nçao houve nenhuma dificuldade excessiva.
 
